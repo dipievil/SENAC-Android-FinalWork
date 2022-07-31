@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Boardgames Collection</string>
+    <string name="name">Nome</string>
+    <string name="lblNumberplayers">Número de jogadores</string>
+    <string name="duration">Duração</string>
+    <string name="lblStatus">Status</string>
+    <string name="lblMin">min</string>
+    <string name="lblAdd">Salvar</string>
+    <string name="lblCancel">Cancelar</string>
+    <string name="hint_new">Novo</string>
+    <string name="hint_game_name">O nome do jogo</string>
+    <string name="lblGameName">Nome do jogo</string>
+    <string name="msgGameSaved">Jogo salvo com sucesso!</string>
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FormActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:hint="@string/hint_game_name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="243dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lblNumberplayers" />
+
+            <EditText
+                android:id="@+id/etMinPlayers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:autofillHints="1"
+                android:ems="10"
+                android:hint="1"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/etMaxPlayers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:autofillHints="1"
+                android:ems="10"
+                android:hint="1"
+                android:inputType="number"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/duration" />
+
+            <EditText
+                android:id="@+id/etDuration"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="30"
+                android:ems="10"
+                android:hint="30"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textAlignment="textStart"
+                android:text="@string/lblMin" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/lblStatus"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/lblStatus" />
+
+            <EditText
+                android:id="@+id/etStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="Novo"
+                android:ems="10"
+                android:hint="@string/hint_new"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/buttonBar">
+
+            <Button
+                android:id="@+id/btnAdd"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lblAdd"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lblCancel"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
